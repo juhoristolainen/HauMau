@@ -11,8 +11,10 @@ img {
   margin-top: 2em;
 }
 
-button {
+a{
   background-color: rgba(181, 209, 210, 1);
   border: 1px solid black;
   padding: 1em 2.5em;
+  text-decoration: none;
+  color: black;
 }

@@ -1,0 +1,19 @@
+<div class="headers" *ngIf="this.animalType == 'dog'">
+  <p>Animals/Dogs</p>
+  <h2>Dogs</h2>
+  <div></div>
+</div>
+<div class="headers" *ngIf="this.animalType == 'cat'">
+  <p>Animals/Cats</p>
+  <h2>Cats</h2>
+  <div></div>
+</div>
+
+<div class="list">
+  <div *ngFor="let animal of animals">
+    <div class="pic">
+      <a routerLink="{{ animal.id }}" class="button">LOOK MORE</a>
+      <img [src]="animal.url" alt="picture of animal" />
+    </div>
+  </div>
+</div>

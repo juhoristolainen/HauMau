@@ -1,5 +1,6 @@
 export interface Animal {
-  name: String;
-  type: String;
-  url: String;
+  id?: string;
+  name: string;
+  type: string;
+  url: string;
 }

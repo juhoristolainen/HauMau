@@ -19,6 +19,8 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AnimalslistComponent } from './animalslist/animalslist.component';
+import { SingleanimalComponent } from './singleanimal/singleanimal.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
     ContactComponent,
     BlogComponent,
     NewanimalComponent,
+    AnimalslistComponent,
+    SingleanimalComponent,
   ],
   imports: [
     BrowserModule,
