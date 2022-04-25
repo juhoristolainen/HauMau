@@ -1,0 +1,66 @@
+form {
+  border: 1px solid black;
+  padding: 2em;
+  width: 30em;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields {
+  display: flex;
+}
+
+.field {
+  margin: 1em;
+}
+
+.field > input {
+  margin-top: 0.5em;
+  width: 15em;
+  height: 1.5em;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid black;
+}
+
+.radios {
+  display: flex;
+}
+
+.radios > div > input {
+  margin: 0 1em;
+}
+
+.radios > div > label {
+  margin-right: 2em;
+}
+
+button {
+  background-color: rgba(181, 209, 210, 1);
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em 1em;
+}
+
+.buttons,
+.radios {
+  display: flex;
+  justify-content: center;
+}
+
+form > div > p {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  margin-left: 10em;
+  width: 70%;
+  font-size: 1.5em;
+}
