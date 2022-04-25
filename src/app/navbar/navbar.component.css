@@ -1,0 +1,13 @@
+header {
+  background-color: rgba(181, 209, 210, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+.menu > a {
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+}
