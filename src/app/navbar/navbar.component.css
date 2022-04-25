@@ -11,3 +11,7 @@ header {
   color: black;
   margin: 1em;
 }
+
+.logo {
+  cursor: pointer;
+}
