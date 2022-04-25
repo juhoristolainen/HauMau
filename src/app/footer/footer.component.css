@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.line {
+  width: 80%;
+  border-top: 2px solid rgba(0, 0, 0, 0.281);
+  margin-left: 10%;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+.logo {
+  width: 5em;
+  margin-left: 1.5em;
+}
+
+.some {
+  display: flex;
+}
+
+button {
+  background-color: rgba(181, 209, 210, 1);
+  border: 1px solid black;
+  padding: 1em;
+  margin-left: 1em;
+}
+
+.newsletter {
+  display: flex;
+}
