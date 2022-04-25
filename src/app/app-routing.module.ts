@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { AnimalsComponent } from './animals/animals.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { NewanimalComponent } from './newanimal/newanimal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'animals', component: AnimalsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'newanimal', component: NewanimalComponent },
 ];
 
 @NgModule({
