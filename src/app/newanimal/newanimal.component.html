@@ -1,13 +1,15 @@
-<form #f="ngForm" (ngSubmit)="newAnimal(f)">
-  <label for="animalname">Name of animal: </label> <br />
-  <input type="text" name="name" id="animalname" ngModel /> <br />
-  <label for="animaltype">Type of animal: </label> <br />
-  <select name="type" id="animaltype" ngModel>
-    <option value="cat">Cat</option>
-    <option value="dog">Dog</option>
-  </select>
-  <br />
-  <label for="animalpicture">Picture of animal: </label> <br />
-  <input type="file" id="animalpicture" (change)="sendPhoto($event)" /> <br />
-  <button type="submit">Send</button>
-</form>
+<div class="content">
+  <form #f="ngForm" (ngSubmit)="newAnimal(f)">
+    <label for="animalname">Name of animal: </label> <br />
+    <input type="text" name="name" id="animalname" ngModel /> <br />
+    <label for="animaltype">Type of animal: </label> <br />
+    <select name="type" id="animaltype" ngModel>
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+    </select>
+    <br />
+    <label for="animalpicture">Picture of animal: </label> <br />
+    <input type="file" id="animalpicture" (change)="sendPhoto($event)" /> <br />
+    <button type="submit">Send</button>
+  </form>
+</div>

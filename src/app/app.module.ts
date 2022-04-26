@@ -21,6 +21,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AnimalslistComponent } from './animalslist/animalslist.component';
 import { SingleanimalComponent } from './singleanimal/singleanimal.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SingleanimalComponent } from './singleanimal/singleanimal.component';
     NewanimalComponent,
     AnimalslistComponent,
     SingleanimalComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

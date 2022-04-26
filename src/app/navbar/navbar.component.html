@@ -1,10 +1,14 @@
 <header>
-  <div class="logo" routerLink="frontpage">haumau</div>
+  <img src="../../assets/pictures/logo1.png" alt="logo" class="logo" />
   <div class="menu">
     <a routerLink="frontpage">HOMEPAGE</a>
     <a routerLink="about">ABOUT US</a>
     <a routerLink="animals">ANIMALS</a>
     <a routerLink="contact">CONTACT</a>
     <a routerLink="blog">BLOG</a>
+    <a *ngIf="this.auth.loggedIn" routerLink="newanimal">NEW ANIMAL</a>
+    <a *ngIf="this.auth.loggedIn" (click)="this.auth.signOut()" class="logout"
+      >SIGN OUT</a
+    >
   </div>
 </header>

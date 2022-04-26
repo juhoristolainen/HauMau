@@ -1,0 +1,15 @@
+<div class="content">
+  <div *ngIf="this.authService.loggedIn">
+    <p>You are already signed in!</p>
+  </div>
+
+  <div *ngIf="!this.authService.loggedIn">
+    <form #f="ngForm" (ngSubmit)="signIn(f)">
+      <label for="email">Email: </label> <br />
+      <input type="email" id="email" ngModel name="email" /> <br />
+      <label for="password">Password: </label> <br />
+      <input type="password" id="password" ngModel name="password" /> <br />
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+</div>

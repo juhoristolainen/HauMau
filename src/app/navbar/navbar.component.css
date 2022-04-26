@@ -2,7 +2,7 @@ header {
   background-color: rgba(181, 209, 210, 1);
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.295);
 }
 
@@ -14,4 +14,15 @@ header {
 
 .logo {
   cursor: pointer;
+  width: 5em;
+  height: 5em;
 }
+
+.logout{
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 1.5em;
+}
+
