@@ -17,5 +17,10 @@ img {
 }
 
 .text {
+  width: 50%;
   margin-left: 10em;
+}
+
+.pic {
+  width: 50%;
 }
