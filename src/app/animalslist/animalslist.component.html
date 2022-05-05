@@ -10,12 +10,10 @@
 </div>
 
 <div class="list">
-  <div class="animals">
-    <div *ngFor="let animal of animals">
-      <div class="pic">
-        <a routerLink="{{ animal.id }}" class="button">LOOK MORE</a>
-        <img [src]="animal.url" alt="picture of animal" />
-      </div>
+  <div *ngFor="let animal of animals" class="animals">
+    <div class="pic">
+      <a routerLink="{{ animal.id }}" class="button">LOOK MORE</a>
+      <img [src]="animal.url" alt="picture of animal" />
     </div>
   </div>
 </div>

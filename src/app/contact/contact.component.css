@@ -65,8 +65,13 @@ form > div > p {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .info {
     margin-left: 2em;
+  }
+
+  .fields {
+    flex-direction: column;
+    justify-content: center;
   }
 }

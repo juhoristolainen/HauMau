@@ -26,3 +26,23 @@ header {
   margin-top: 1.5em;
 }
 
+@media only screen and (max-width: 800px) {
+  .menu {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  header {
+    min-width: 100%;
+  }
+
+  .menu {
+    font-size: small;
+  }
+
+  .logo {
+    width: 4em;
+    height: 4em;
+  }
+}

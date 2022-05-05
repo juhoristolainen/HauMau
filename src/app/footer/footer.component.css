@@ -30,3 +30,9 @@ button {
 .newsletter {
   display: flex;
 }
+
+@media only screen and (max-width: 800px) {
+  footer{
+    flex-direction: column;
+  }
+}
