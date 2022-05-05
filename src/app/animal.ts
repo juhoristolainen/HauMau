@@ -3,4 +3,5 @@ export interface Animal {
   name: string;
   type: string;
   url: string;
+  description: string;
 }

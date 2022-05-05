@@ -2,6 +2,7 @@ img {
   width: 25em;
   height: 30em;
   border: 1px solid black;
+  object-fit: contain;
 }
 
 .list {

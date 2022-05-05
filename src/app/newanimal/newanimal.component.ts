@@ -30,7 +30,12 @@ export class NewanimalComponent implements OnInit {
     const ref = this.storage.ref(filepath);
     const task = ref.put(file).then(() => {
       ref.getDownloadURL().subscribe((data) => {
-        animal = { name: f.value.name, type: f.value.type, url: data };
+        animal = {
+          name: f.value.name,
+          type: f.value.type,
+          url: data,
+          description: f.value.description,
+        };
         this.animalService.addAnimalToDb(animal);
       });
     });

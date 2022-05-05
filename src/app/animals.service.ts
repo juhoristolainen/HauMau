@@ -22,7 +22,7 @@ export class AnimalsService {
   constructor(private firestore: Firestore) {}
 
   addAnimalToDb(animal: Animal) {
-    console.log(animal.type);
+    console.log(animal);
     const type = animal.type;
     // // Luo viittauksen collectioniin jonne kontaktidokumentti lisätään.
     const ref = collection(this.firestore, `${type}`);
