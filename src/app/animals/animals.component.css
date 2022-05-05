@@ -18,3 +18,13 @@ a{
   text-decoration: none;
   color: black;
 }
+
+@media only screen and (max-width: 600px) {
+  .content{
+    display: block;
+  }
+
+  img {
+    margin-top: 4em;
+  }
+}

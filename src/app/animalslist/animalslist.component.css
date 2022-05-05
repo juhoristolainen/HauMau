@@ -54,3 +54,15 @@ img {
 .headers > div {
   width: 7em;
 }
+
+@media only screen and (max-width: 600px) {
+  .list {
+    display: flex;
+  }
+  
+  .animals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

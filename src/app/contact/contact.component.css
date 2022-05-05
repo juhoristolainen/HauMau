@@ -64,3 +64,9 @@ form > div > p {
   width: 70%;
   font-size: 1.5em;
 }
+
+@media only screen and (max-width: 600px) {
+  .info {
+    margin-left: 2em;
+  }
+}
