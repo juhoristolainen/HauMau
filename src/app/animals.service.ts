@@ -12,6 +12,7 @@ import {
   setDoc,
   getDoc,
 } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Animal } from './animal';
 
@@ -19,7 +20,7 @@ import { Animal } from './animal';
   providedIn: 'root',
 })
 export class AnimalsService {
-  constructor(private firestore: Firestore) {}
+  constructor(private firestore: Firestore, private router: Router) {}
 
   addAnimalToDb(animal: Animal) {
     console.log(animal);
@@ -49,5 +50,10 @@ export class AnimalsService {
     } else {
       return null;
     }
+  }
+
+  deleteAnimalFromDb(type: string, id: string) {
+    deleteDoc(doc(this.firestore, type, id));
+    this.router.navigate(['/animals/', type]);
   }
 }

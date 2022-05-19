@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   signIn(f: NgForm) {
-    this.authService.signIn(f.value.email, f.value.password);
+    console.log(this.authService.signIn(f.value.email, f.value.password));
     f.reset();
   }
 }

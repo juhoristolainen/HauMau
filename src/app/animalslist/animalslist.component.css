@@ -37,7 +37,7 @@ img {
   margin-bottom: 2em;
 }
 
-.pic:hover{
+.pic:hover img{
   filter:brightness(0.5)
 }
 

@@ -10,7 +10,7 @@
     <a routerLink="about">ABOUT US</a>
     <a routerLink="animals">ANIMALS</a>
     <a routerLink="contact">CONTACT</a>
-    <a routerLink="blog">BLOG</a>
+    <!-- <a routerLink="blog">BLOG</a> -->
     <a *ngIf="this.auth.loggedIn" routerLink="newanimal">NEW ANIMAL</a>
     <a *ngIf="this.auth.loggedIn" (click)="this.auth.signOut()" class="logout"
       >SIGN OUT</a

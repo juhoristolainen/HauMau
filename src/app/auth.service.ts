@@ -23,7 +23,7 @@ export class AuthService {
     setPersistence(this.auth, browserSessionPersistence)
       .then(() => {
         return signInWithEmailAndPassword(this.auth, email, password).then(
-          (res) => console.log(res)
+          (res) => this.router.navigate(['/frontpage'])
         );
       })
       .catch((error) => {

@@ -25,13 +25,29 @@ img {
   width: 50%;
 }
 
+button {
+  border-radius: 15px;
+  background-color: red;
+  width: 15em;
+  height: 2em;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: rgb(126, 0, 0);
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   .content {
     flex-direction: column;
   }
 
   img {
-    margin-left: 3em;
+    margin-left: 1em;
+    max-width: 20em;
+    max-height: 25em;
+    object-fit: scale-down;
   }
 
   .text {
@@ -39,3 +55,4 @@ img {
     margin-left: 5em;
   }
 }
+

@@ -5,5 +5,8 @@
   <div class="text">
     <h2>{{ this.animal.name }}</h2>
     <p class="desc">{{ this.animal.description }}</p>
+    <button (click)="deleteAnimal()" *ngIf="this.authService.loggedIn">
+      Delete animal
+    </button>
   </div>
 </div>
